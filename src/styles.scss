@@ -1,0 +1,40 @@
+:root {
+  --header-h: 60px;
+  --text-color: #000;
+  --background-color: #ffffff;
+  --primary-color: #4d4dff;
+  --on-primary-color: #3655b3;
+  --accent-color: #d3deff;
+  --on-accent-color: #a6bcff;
+  --gap: 2rem;
+}
+
+.dark-theme {
+  --background-color: #000;
+  --text-color: #fff;
+}
+
+.highlight {
+  background: url("https://angular.dev/media/gradient-FZRCWTCT.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clip-path: inset(0%);
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}

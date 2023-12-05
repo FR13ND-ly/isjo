@@ -1,0 +1,89 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 20%;
+  gap: calc(var(--gap) / 2);
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  border: 0px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.team-btn {
+  background-color: var(--on-primary-color);
+  &:hover {
+    background-color: var(--primary-color);
+  }
+  &:active {
+    border: 2px solid var(--on-primary-color);
+  }
+}
+
+.students-btn {
+  background-color: var(--on-accent-color);
+  &:hover {
+    background-color: var(--accent-color);
+  }
+  &:active {
+    border: 2px solid var(--on-accent-color);
+  }
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--on-primary-color);
+  color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.title {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.item {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  &__time {
+    position: block;
+    width: 150px;
+    font-weight: bold;
+  }
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) / 2);
+}
+
+.students {
+  .item {
+    color: #000;
+    border-bottom: 2px solid var(--on-accent-color);
+  }
+  .day {
+    background-color: var(--accent-color);
+  }
+  .title {
+    color: #000;
+    background-color: var(--on-accent-color);
+  }
+}

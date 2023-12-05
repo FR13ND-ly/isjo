@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  width: 100vw;
+  height: var(--header-h);
+  box-sizing: border-box;
+  position: fixed;
+  background-color: var(--background-color);
+  z-index: 9999999999;
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 20px;
+    left: 0;
+    bottom: -20px;
+    z-index: 9999999999;
+    background: linear-gradient(180deg, var(--background-color), transparent);
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  &--item {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    user-select: none;
+    transition: color 0.1s;
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      background-color: var(--primary-color);
+      transform: scaleX(0);
+      transition: 0.3s cubic-bezier(0, 0, 0.2, 1);
+      transform-origin: left;
+    }
+    &:hover {
+      a {
+        background: url("https://angular.dev/media/gradient-FZRCWTCT.jpg");
+        background-size: cover;
+        background-position: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        clip-path: inset(0%);
+      }
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.dark-mode-icon {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.1s;
+  margin-top: -0.2rem;
+  &:hover {
+    background: url("https://angular.dev/media/gradient-FZRCWTCT.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    clip-path: inset(0%);
+  }
+  &:active {
+    color: var(--on-primary-color);
+  }
+}
+
+img {
+  height: 100%;
+}
+
+.activated {
+  color: var(--primary-color);
+}

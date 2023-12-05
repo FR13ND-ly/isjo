@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: var(--gap);
+}
+
+footer {
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.description {
+  padding: 2rem;
+  color: #fff;
+}
+
+sup {
+  font-size: 1rem;
+}
+
+.copyright {
+  background-color: var(--on-primary-color);
+  margin-bottom: 0;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+  color: #fff;
+}

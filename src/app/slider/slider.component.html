@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div class="left" (click)="onPrevious()">
+    <span>❮</span>
+  </div>
+  <img class="image-slider" [src]="image$ | async" />
+  <div class="right" (click)="onNext()">
+    <span>❯</span>
+  </div>
+</div>
