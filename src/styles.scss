@@ -2,10 +2,10 @@
   --header-h: 70px;
   --text-color: #000;
   --background-color: #ffffff;
-  --primary-color: #4d4dff;
-  --on-primary-color: #3655b3;
-  --accent-color: #d3deff;
-  --on-accent-color: #a6bcff;
+  --primary-color: rgb(94, 109, 196);
+  --on-primary-color: #395297;
+  --accent-color: #c1d4fc;
+  --on-accent-color: #81a0e4;
   --gap: 2rem;
 }
 
@@ -15,13 +15,7 @@
 }
 
 .highlight {
-  background: url("https://angular.dev/media/gradient-FZRCWTCT.jpg");
-  background-size: cover;
-  background-position: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  clip-path: inset(0%);
+  color: #4d4dff;
 }
 
 html,

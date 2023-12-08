@@ -1,12 +1,12 @@
 :host {
-  padding: 0 calc(var(--gap) * 1.5);
+  padding: 0rem 12rem;
 }
 
 .wrapper {
   display: flex;
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 62vh;
   box-sizing: border-box;
   margin-bottom: 2rem;
   @media only screen and (max-width: 768px) {
@@ -28,7 +28,7 @@
 .selector {
   width: 15px;
   height: 15px;
-  background-color: #666;
+  background-color: #999;
   border-radius: 50vmax;
   cursor: pointer;
   transition: 0.2s;
@@ -37,11 +37,14 @@
   }
   &--selected {
     width: 50px;
-    background-color: var(--primary-color);
+    background: linear-gradient(
+      90deg,
+      var(--primary-color),
+      var(--on-primary-color)
+    );
   }
   &:hover.selector--selected {
-    width: 50px;
-    background-color: var(--on-primary-color);
+    filter: brightness(0.8);
   }
 }
 
