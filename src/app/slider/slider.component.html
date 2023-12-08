@@ -6,4 +6,21 @@
   <div class="right" (click)="onNext()">
     <span>❯</span>
   </div>
+  <section class="selectors" *ngIf="{ index: imageIndex$ | async } as vs">
+    <div
+      class="selector"
+      [class.selector--selected]="vs.index == 0"
+      (click)="onSelect(0)"
+    ></div>
+    <div
+      class="selector"
+      [class.selector--selected]="vs.index == 1"
+      (click)="onSelect(1)"
+    ></div>
+    <div
+      class="selector"
+      [class.selector--selected]="vs.index == 2"
+      (click)="onSelect(2)"
+    ></div>
+  </section>
 </div>

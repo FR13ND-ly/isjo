@@ -12,12 +12,9 @@ import { BehaviorSubject, Observable, Subscription, interval, map } from 'rxjs';
 export class SliderComponent implements OnInit {
 
   slider : string[] = [
-    'https://ijso2023.in.th/wp-content/uploads/2023/10/IJSO-annouce-edit-01-1500x630.png',
-    'https://ijso2023.in.th/wp-content/uploads/2023/11/Items-1500x630.png',
-    'https://ijso2023.in.th/wp-content/uploads/2023/11/PDPA-1500x630.jpg',
-    'https://ijso2023.in.th/wp-content/uploads/2023/11/IJSO-annouce-003covid19-ATK-check-edit28Nov2023-01-1500x630.png',
-    'https://ijso2023.in.th/wp-content/uploads/2023/11/IJSO-annouce-006-01-1500x630.jpg',
-    'https://ijso2023.in.th/wp-content/uploads/2023/11/IJSO-annouce-002transportation-edit28Nov2023-01-1500x630.png'
+    '/assets/slider/1.webp',
+    '/assets/slider/2.webp',
+    '/assets/slider/3.webp'
   ]
 
   imageIndex$ : BehaviorSubject<number> = new BehaviorSubject<number>(0);
@@ -50,4 +47,8 @@ export class SliderComponent implements OnInit {
     this.interval$ = interval(5000).subscribe(() => this.onNext())
   }
 
+  onSelect(index: number) {
+    this.imageIndex$.next(index)
+    this.setInterval()
+  }
 }

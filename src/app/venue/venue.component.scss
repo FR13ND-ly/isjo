@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   background: url("/assets/bg.jpg") center center / cover no-repeat fixed;
-  text-align: center;
   align-items: center;
-  padding: 2rem 0 4rem;
+  padding: 2rem 20% 4rem;
 }
 
 h1 {
@@ -13,28 +12,32 @@ h1 {
   font-size: 3rem;
   padding: 1rem 2rem;
   color: #fff;
+  text-align: center;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  background-color: var(--on-primary-color);
+  background-color: #fff;
   border-radius: 2rem;
   overflow: hidden;
   border: 1px solid #fff;
-  color: #fff;
+  height: fit-content;
+  color: #000;
   text-decoration: none;
+  height: fit-content;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  gap: 0.5rem;
+  height: 12rem;
   &__image {
-    width: 100%;
-    height: 15rem;
+    height: 100%;
+    width: 10rem;
     object-fit: cover;
   }
   &__title {
-    padding: 1rem 1rem 1.2rem;
-    font-size: 1.4rem;
-    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
   &:hover {
     border-radius: 4rem;
@@ -42,8 +45,8 @@ h1 {
 }
 
 .wrapper {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }

@@ -1,5 +1,5 @@
 :host {
-  padding: 0 var(--gap);
+  padding: 0 calc(var(--gap) * 1.5);
 }
 
 .wrapper {
@@ -13,6 +13,35 @@
     height: 20vh;
     margin-bottom: 1rem;
     margin-top: -1rem;
+  }
+}
+
+.selectors {
+  bottom: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.selector {
+  width: 15px;
+  height: 15px;
+  background-color: #666;
+  border-radius: 50vmax;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    background-color: #ccc;
+  }
+  &--selected {
+    width: 50px;
+    background-color: var(--primary-color);
+  }
+  &:hover.selector--selected {
+    width: 50px;
+    background-color: var(--on-primary-color);
   }
 }
 
