@@ -8,7 +8,8 @@
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
 .wrapper {
@@ -36,7 +37,7 @@ h1 {
   &__title {
     padding: 1rem 1.2rem 1.4rem;
     font-size: 1.2rem;
-    font-weight: bold;
+    text-wrap: pretty;
     line-height: 1.6;
   }
   &:hover {

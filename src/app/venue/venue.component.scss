@@ -4,7 +4,7 @@
   background: url("/assets/gallery/imagine2.jpg") center center / cover
     no-repeat fixed;
   align-items: center;
-  padding: 2rem 20% 4rem;
+  padding: 2rem 18% 4rem;
 }
 
 h1 {
@@ -26,10 +26,9 @@ h1 {
   height: fit-content;
   color: #000;
   text-decoration: none;
-  height: fit-content;
+  height: 13rem;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   gap: 0.5rem;
-  height: 12rem;
   &__image {
     height: 100%;
     width: 10rem;
